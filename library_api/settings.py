@@ -28,6 +28,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,7 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'library',
 ]
-
+AUTH_USER_MODEL = 'library.LibraryUser'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
